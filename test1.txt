@@ -1,0 +1,560 @@
+
+Baji@DESKTOP-6JHCBKM MINGW64 ~
+$ cd Downloads/
+
+Baji@DESKTOP-6JHCBKM MINGW64 ~/Downloads
+$ ssh -i "Newkeypair123.pem" ubuntu@ec2-54-196-152-136.compute-1.amazonaws.com
+The authenticity of host 'ec2-54-196-152-136.compute-1.amazonaws.com (54.196.152.136)' can't be established.
+ECDSA key fingerprint is SHA256:W/e6U2/evbEyBXcxEObcnzuxPO4jX9zahCjOdueLaJg.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'ec2-54-196-152-136.compute-1.amazonaws.com,54.196.152.136' (ECDSA) to the list of known hosts.
+Welcome to Ubuntu 14.04.5 LTS (GNU/Linux 3.13.0-161-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Tue Feb  5 17:51:38 UTC 2019
+
+  System load: 0.0               Memory usage: 5%   Processes:       81
+  Usage of /:  10.2% of 7.74GB   Swap usage:   0%   Users logged in: 0
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+0 packages can be updated.
+0 updates are security updates.
+
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+ubuntu@ip-172-31-27-189:~$ sudo su -
+root@ip-172-31-27-189:~# apt-get update
+Ign http://us-east-1.ec2.archive.ubuntu.com trusty InRelease
+Get:1 http://us-east-1.ec2.archive.ubuntu.com trusty-updates InRelease [65.9 kB]
+Hit http://us-east-1.ec2.archive.ubuntu.com trusty-backports InRelease
+Hit http://us-east-1.ec2.archive.ubuntu.com trusty Release.gpg
+Hit http://us-east-1.ec2.archive.ubuntu.com trusty Release
+Get:2 http://security.ubuntu.com trusty-security InRelease [65.9 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com trusty-updates/main Sources [426 kB]
+Get:4 http://us-east-1.ec2.archive.ubuntu.com trusty-updates/restricted Sources [6,322 B]
+Get:5 http://us-east-1.ec2.archive.ubuntu.com trusty-updates/universe Sources [230 kB]
+Get:6 http://us-east-1.ec2.archive.ubuntu.com trusty-updates/multiverse Sources [7,424 B]
+Get:7 http://us-east-1.ec2.archive.ubuntu.com trusty-updates/main amd64 Packages [1,140 kB]
+Get:8 http://security.ubuntu.com trusty-security/main Sources [168 kB]
+Get:9 http://us-east-1.ec2.archive.ubuntu.com trusty-updates/restricted amd64 Packages [17.2 kB]
+Get:10 http://security.ubuntu.com trusty-security/universe Sources [100 kB]
+Get:11 http://us-east-1.ec2.archive.ubuntu.com trusty-updates/universe amd64 Packages [517 kB]
+Get:12 http://security.ubuntu.com trusty-security/main amd64 Packages [804 kB]
+Get:13 http://us-east-1.ec2.archive.ubuntu.com trusty-updates/multiverse amd64 Packages [14.6 kB]
+Get:14 http://us-east-1.ec2.archive.ubuntu.com trusty-updates/main Translation-en [565 kB]
+Get:15 http://us-east-1.ec2.archive.ubuntu.com trusty-updates/multiverse Translation-en [7,616 B]
+Get:16 http://us-east-1.ec2.archive.ubuntu.com trusty-updates/restricted Translation-en [4,021 B]
+Get:17 http://us-east-1.ec2.archive.ubuntu.com trusty-updates/universe Translation-en [276 kB]
+Get:18 http://security.ubuntu.com trusty-security/universe amd64 Packages [285 kB]
+Get:19 http://us-east-1.ec2.archive.ubuntu.com trusty-backports/main Sources [9,709 B]
+Get:20 http://us-east-1.ec2.archive.ubuntu.com trusty-backports/restricted Sources [28 B]
+Get:21 http://us-east-1.ec2.archive.ubuntu.com trusty-backports/universe Sources [35.4 kB]
+Get:22 http://us-east-1.ec2.archive.ubuntu.com trusty-backports/multiverse Sources [1,896 B]
+Get:23 http://security.ubuntu.com trusty-security/main Translation-en [430 kB]
+Hit http://us-east-1.ec2.archive.ubuntu.com trusty-backports/main amd64 Packages
+Hit http://us-east-1.ec2.archive.ubuntu.com trusty-backports/restricted amd64 Packages
+Hit http://us-east-1.ec2.archive.ubuntu.com trusty-backports/universe amd64 Packages
+Hit http://us-east-1.ec2.archive.ubuntu.com trusty-backports/multiverse amd64 Packages
+Hit http://us-east-1.ec2.archive.ubuntu.com trusty-backports/main Translation-en
+Hit http://us-east-1.ec2.archive.ubuntu.com trusty-backports/multiverse Translation-en
+Hit http://us-east-1.ec2.archive.ubuntu.com trusty-backports/restricted Translation-en
+Hit http://us-east-1.ec2.archive.ubuntu.com trusty-backports/universe Translation-en
+Get:24 http://us-east-1.ec2.archive.ubuntu.com trusty/main Sources [1,064 kB]
+Get:25 http://security.ubuntu.com trusty-security/universe Translation-en [155 kB]
+Get:26 http://us-east-1.ec2.archive.ubuntu.com trusty/restricted Sources [5,433 B]
+Get:27 http://us-east-1.ec2.archive.ubuntu.com trusty/universe Sources [6,399 kB]
+Get:28 http://us-east-1.ec2.archive.ubuntu.com trusty/multiverse Sources [174 kB]
+Hit http://us-east-1.ec2.archive.ubuntu.com trusty/main amd64 Packages
+Hit http://us-east-1.ec2.archive.ubuntu.com trusty/restricted amd64 Packages
+Hit http://us-east-1.ec2.archive.ubuntu.com trusty/universe amd64 Packages
+Hit http://us-east-1.ec2.archive.ubuntu.com trusty/multiverse amd64 Packages
+Hit http://us-east-1.ec2.archive.ubuntu.com trusty/main Translation-en
+Hit http://us-east-1.ec2.archive.ubuntu.com trusty/multiverse Translation-en
+Hit http://us-east-1.ec2.archive.ubuntu.com trusty/restricted Translation-en
+Hit http://us-east-1.ec2.archive.ubuntu.com trusty/universe Translation-en
+Ign http://us-east-1.ec2.archive.ubuntu.com trusty/main Translation-en_US
+Ign http://us-east-1.ec2.archive.ubuntu.com trusty/multiverse Translation-en_US
+Ign http://us-east-1.ec2.archive.ubuntu.com trusty/restricted Translation-en_US
+Ign http://us-east-1.ec2.archive.ubuntu.com trusty/universe Translation-en_US
+Fetched 13.0 MB in 4s (2,597 kB/s)
+Reading package lists... Done
+root@ip-172-31-27-189:~# curl -fsSL https://get.docker.com -o get-docker.sh
+root@ip-172-31-27-189:~# sudo sh get-docker.sh
+# Executing docker install script, commit: 4957679
++ sh -c apt-get update -qq >/dev/null
++ sh -c apt-get install -y -qq apt-transport-https ca-certificates curl >/dev/null
++ sh -c curl -fsSL "https://download.docker.com/linux/ubuntu/gpg" | apt-key add -qq - >/dev/null
++ sh -c echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu trusty edge" > /etc/apt/sources.list.d/docker.list
++ sh -c apt-get update -qq >/dev/null
++ sh -c apt-get install -y -qq --no-install-recommends docker-ce >/dev/null
++ sh -c docker version
+Client:
+ Version:           18.06.1-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        e68fc7a
+ Built:             Tue Aug 21 17:24:58 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.1-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       e68fc7a
+  Built:            Tue Aug 21 17:23:24 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+If you would like to use Docker as a non-root user, you should now consider
+adding your user to the "docker" group with something like:
+
+  sudo usermod -aG docker your-user
+
+Remember that you will have to log out and back in for this to take effect!
+
+WARNING: Adding a user to the "docker" group will grant the ability to run
+         containers which can be used to obtain root privileges on the
+         docker host.
+         Refer to https://docs.docker.com/engine/security/security/#docker-daemon-attack-surface
+         for more information.
+root@ip-172-31-27-189:~# docker --version
+Docker version 18.06.1-ce, build e68fc7a
+root@ip-172-31-27-189:~# docker run --name webserver -p 9999:80 -d nginx
+Unable to find image 'nginx:latest' locally
+latest: Pulling from library/nginx
+5e6ec7f28fb7: Pull complete
+ab804f9bbcbe: Pull complete
+052b395f16bc: Pull complete
+Digest: sha256:56bcd35e8433343dbae0484ed5b740843dd8bff9479400990f251c13bbb94763
+Status: Downloaded newer image for nginx:latest
+4b776fa0fc57e75834c04ac794d976b9ec0d18efd52800aa5c9c6edfcfe8ef9f
+root@ip-172-31-27-189:~# docker inspect webserver
+[
+    {
+        "Id": "4b776fa0fc57e75834c04ac794d976b9ec0d18efd52800aa5c9c6edfcfe8ef9f",
+        "Created": "2019-02-05T18:06:01.723997466Z",
+        "Path": "nginx",
+        "Args": [
+            "-g",
+            "daemon off;"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 7866,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2019-02-05T18:06:02.059781446Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:42b4762643dcc9bf492b08064b55fef64942f055f0da91289a8abf93c6d6b43c",
+        "ResolvConfPath": "/var/lib/docker/containers/4b776fa0fc57e75834c04ac794d976b9ec0d18efd52800aa5c9c6edfcfe8ef9f/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/4b776fa0fc57e75834c04ac794d976b9ec0d18efd52800aa5c9c6edfcfe8ef9f/hostname",
+        "HostsPath": "/var/lib/docker/containers/4b776fa0fc57e75834c04ac794d976b9ec0d18efd52800aa5c9c6edfcfe8ef9f/hosts",
+        "LogPath": "/var/lib/docker/containers/4b776fa0fc57e75834c04ac794d976b9ec0d18efd52800aa5c9c6edfcfe8ef9f/4b776fa0fc57e75834c04ac794d976b9ec0d18efd52800aa5c9c6edfcfe8ef9f-json.log",
+        "Name": "/webserver",
+        "RestartCount": 0,
+        "Driver": "aufs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {
+                "80/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "9999"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "shareable",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DiskQuota": 0,
+            "KernelMemory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": 0,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/asound",
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": null,
+            "Name": "aufs"
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "4b776fa0fc57",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NGINX_VERSION=1.15.8-1~stretch",
+                "NJS_VERSION=1.15.8.0.2.7-1~stretch"
+            ],
+            "Cmd": [
+                "nginx",
+                "-g",
+                "daemon off;"
+            ],
+            "ArgsEscaped": true,
+            "Image": "nginx",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            },
+            "StopSignal": "SIGTERM"
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "d4807f1c4f57126cb7e6f0c21685c56da061106173aecb61edbaf2a7e386d42d",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "80/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "9999"
+                    }
+                ]
+            },
+            "SandboxKey": "/var/run/docker/netns/d4807f1c4f57",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "6c9a76b4085c7631bfb5eaa207d2c692bdbed79af420a4cd251d193fdf9b13ed",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.2",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "02:42:ac:11:00:02",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "NetworkID": "6dc9263eb2d91b20f67000bb7752d78a36ee84f59e2fa0a894b7608d5405276e",
+                    "EndpointID": "6c9a76b4085c7631bfb5eaa207d2c692bdbed79af420a4cd251d193fdf9b13ed",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:11:00:02",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]
+root@ip-172-31-27-189:~# docker run --name appserver -p 9989:8080 -d tomcat
+Unable to find image 'tomcat:latest' locally
+latest: Pulling from library/tomcat
+ab1fc7e4bf91: Pull complete
+35fba333ff52: Pull complete
+f0cb1fa13079: Pull complete
+3d79c18d1bc0: Pull complete
+ff1d0ae4641b: Pull complete
+8883e662573f: Pull complete
+adab760d76bd: Pull complete
+86323b680e93: Pull complete
+14a2c1cdce1c: Pull complete
+ee59bf8c5470: Pull complete
+067f988306af: Pull complete
+Digest: sha256:296b26baeee450a9814b2733e9d085f3d26af1c48e5fdc2000496ff7e12bc897
+Status: Downloaded newer image for tomcat:latest
+3913656fb201b42cb5238bf8fe637a2e7f41b237f619f3725d2cb197ad459a02
+root@ip-172-31-27-189:~# docker stop webserver
+webserver
+root@ip-172-31-27-189:~# docker stert webserver
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default
+                           "/root/.docker")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level
+                           ("debug"|"info"|"warn"|"error"|"fatal")
+                           (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default
+                           "/root/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default
+                           "/root/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default
+                           "/root/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  config      Manage Docker configs
+  container   Manage containers
+  image       Manage images
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+root@ip-172-31-27-189:~# docker start webserver
+webserver
+root@ip-172-31-27-189:~# docker rename webserver webhost
+root@ip-172-31-27-189:~# docker container ls
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                    NAMES
+3913656fb201        tomcat              "catalina.sh run"        2 minutes ago       Up 2 minutes        0.0.0.0:9989->8080/tcp   appserver
+4b776fa0fc57        nginx               "nginx -g 'daemon of…"   5 minutes ago       Up 53 seconds       0.0.0.0:9999->80/tcp     webhost
+root@ip-172-31-27-189:~# docker run --name ubuntu -it centos
+Unable to find image 'centos:latest' locally
+latest: Pulling from library/centos
+a02a4930cb5d: Pull complete
+Digest: sha256:184e5f35598e333bfa7de10d8fb1cebb5ee4df5bc0f970bf2b1e7c7345136426
+Status: Downloaded newer image for centos:latest
+[root@4571f0f8f0a9 /]# pwd
+/
+[root@4571f0f8f0a9 /]# hostname
+4571f0f8f0a9
+[root@4571f0f8f0a9 /]# exit
+exit
+root@ip-172-31-27-189:~# docker rm -f $(docker ps -aq)
+4571f0f8f0a9
+3913656fb201
+4b776fa0fc57
+root@ip-172-31-27-189:~# ls
+get-docker.sh
+root@ip-172-31-27-189:~# docker run --name mydb -d -e MYSQL_ROOT_PASSWORD=intelliq mysql:5
+Unable to find image 'mysql:5' locally
+5: Pulling from library/mysql
+5e6ec7f28fb7: Already exists
+4140e62498e1: Pull complete
+e7bc612618a0: Pull complete
+1af808cf1124: Pull complete
+ff72a74ebb66: Pull complete
+3a28cb03e3dc: Pull complete
+2b52dda3bd7d: Pull complete
+dd1e5bc08c44: Pull complete
+2cbf322d346d: Pull complete
+7193a395fe03: Pull complete
+d177f9940737: Pull complete
+Digest: sha256:1590f2540fd87e39605686873fb10206da4cbd7e83df2bc4110abe9fb740699e
+Status: Downloaded newer image for mysql:5
+066761526dc7c8574788f056b715acd7e9a41eb1e353fb5c451839fd65223417
+root@ip-172-31-27-189:~# docket ecec it mydb bash
+No command 'docket' found, did you mean:
+ Command 'docker' from package 'docker' (universe)
+ Command 'socket' from package 'socket' (universe)
+docket: command not found
+root@ip-172-31-27-189:~# docket exec it mydb bash
+No command 'docket' found, did you mean:
+ Command 'docker' from package 'docker' (universe)
+ Command 'socket' from package 'socket' (universe)
+docket: command not found
+root@ip-172-31-27-189:~# docket exec -it mydb bash
+No command 'docket' found, did you mean:
+ Command 'socket' from package 'socket' (universe)
+ Command 'docker' from package 'docker' (universe)
+docket: command not found
+root@ip-172-31-27-189:~# docker exec -it mydb bash
+root@066761526dc7:/# mysql -u -p
+ERROR 1045 (28000): Access denied for user '-p'@'localhost' (using password: NO)
+root@066761526dc7:/# mysql -u root  -p
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 3
+Server version: 5.7.25 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases
+    -> ^C
+mysql> \g
+ERROR:
+No query specified
+
+mysql> \G
+ERROR:
+No query specified
+
+mysql> exit
+Bye
+root@066761526dc7:/# show databases
+bash: show: command not found
+root@066761526dc7:/# mydb
+bash: mydb: command not found
+root@066761526dc7:/# docker rm -f (docker ps -aq)
+bash: syntax error near unexpected token `('
+root@066761526dc7:/# exit
+exit
+root@ip-172-31-27-189:~# docker rm -f $(docker ps -aq)
+066761526dc7
+root@ip-172-31-27-189:~#
